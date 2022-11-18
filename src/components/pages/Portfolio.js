@@ -1,49 +1,18 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 
 
-function Portfolio() {
-  return (
-    <Carousel>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=First slide&bg=373940"
-        alt="First slide"
-      />
-      <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=Second slide&bg=282c34"
-        alt="Second slide"
-      />
-
-      <Carousel.Caption>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=Third slide&bg=20232a"
-        alt="Third slide"
-      />
-
-      <Carousel.Caption>
-        <h3>Third slide label</h3>
-        <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
-  </Carousel>
+export default function Portfolio(){
+  return(
+    <div>
+    <h1>Projects</h1>
+    <p>
+    Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
+    Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
+    mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
+    lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
+    imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
+    in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+  </p>
+  </div>
   );
 }
-
-export default Portfolio;

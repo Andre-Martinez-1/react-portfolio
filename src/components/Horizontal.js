@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/horizontal.css";
 import CssImg from "../assets/imgs/css.png";
 import ExpressImg from "../assets/imgs/express.png";
 import GithubImg from "../assets/imgs/github.png";

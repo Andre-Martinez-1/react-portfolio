@@ -1,0 +1,13 @@
+/* **************** customizing the nav bar **************** */
+/* makes the nav stay at the top */
+.side-nav {
+    position: fixed;
+    top: 30%;
+    z-index: 2;
+  }
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
