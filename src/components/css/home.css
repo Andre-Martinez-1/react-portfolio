@@ -1,0 +1,15 @@
+.home-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .home-text {
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    border-radius: 30px;
+  }
