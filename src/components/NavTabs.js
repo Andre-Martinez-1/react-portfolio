@@ -1,18 +1,18 @@
 import React from "react";
 import "./css/nav.css";
 import Nav from "react-bootstrap/Nav";
-import lettera from "../assets/background-imgs/Alphabet-A-PNG-Photos.png"
+// import lettera from "../assets/background-imgs/Alphabet-A-PNG-Photos.png"
 
 function NavTabs() {
   return (
     <div className="">
-      <div className="top-nav">
+      {/* <div className="top-nav"> 
       <img
               src={lettera}
               alt="Letter A symbol"
               className="nav-symbol "
             ></img>
-      </div>
+      </div> */}
 
       <div className="side-nav"> <Nav defaultActiveKey="/home" className="flex-column">
         <Nav.Link href="#home" className="mt-2 nav-home">

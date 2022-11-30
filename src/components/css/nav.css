@@ -6,7 +6,7 @@
     z-index: 2;
   }
 
-.top-nav {
+/* .top-nav { 
     position: fixed;
     top: 0;
     z-index: 2;
@@ -15,5 +15,5 @@
 .nav-symbol {
     height: 50px;
     width: 50px;
-   /* filter: brightness(.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(50%);*/
-}
+    filter: brightness(.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(50%);
+}*/
