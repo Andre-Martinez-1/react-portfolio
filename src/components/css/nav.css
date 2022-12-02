@@ -1,9 +1,30 @@
+/* **************** Override Bootstrap  **************** */
+
+.nav {
+    --bs-nav-link-color: white !important;
+  }
+  
+  .nav-link:hover {
+    margin-left: 0px !important;
+    transition-duration: 500ms !important;
+    transition: 0ms;
+    color: white;
+  }
+
 /* **************** customizing the nav bar **************** */
 /* makes the nav stay at the top */
 .side-nav {
     position: fixed;
     top: 30%;
     z-index: 2;
+  }
+
+.--bs-nav-link-hover-color{
+    color:white !important;
+}
+
+  .nav-i{
+    padding-left: 20px;
   }
 
 /* .top-nav { 
@@ -17,3 +38,29 @@
     width: 50px;
     filter: brightness(.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(50%);
 }*/
+/* **************** customizing nav icons **************** */
+.nav-home {
+    margin-left: -62px;
+    transition-duration: 500ms !important;
+  }
+
+.nav-port {
+    margin-left: -72px;
+    transition-duration: 500ms !important;
+  }
+  
+.nav-about {
+    margin-left: -60px;
+    transition-duration: 500ms !important;
+  }
+  
+.nav-resume {
+    margin-left: -72px;
+    transition-duration: 500ms !important;
+  }
+  
+.nav-contact {
+    margin-left: -71px;
+    transition-duration: 500ms !important;
+  }
+  
