@@ -1,8 +1,11 @@
 import React from 'react';
-
+import { Parallax } from 'react-parallax';
+import Swingers from "../../assets/background-imgs/IMG_4939.jpg"
 
 export default function Portfolio(){
   return(
+<Parallax className="projects-background" bgImage={Swingers} bgImageAlt="Image of Andre Martinez walking in front of Swingers Diner" strength={800}>
+
     <div>
     <h1>Projects</h1>
     <p>
@@ -14,5 +17,6 @@ export default function Portfolio(){
     in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
   </p>
   </div>
+</Parallax>
   );
 }

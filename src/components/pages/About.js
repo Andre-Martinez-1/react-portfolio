@@ -1,17 +1,19 @@
 import React from 'react';
+import ProfilePicture from "../../assets/background-imgs/Profile-pic.jpg"
+import "../css/about.css";
 
 export default function About() {
   return (
     <div>
-      <h1 className='text-danger'>About Page</h1>
+      <h1>About</h1>
+      <div className='profile'>
+         <img src = {ProfilePicture} alt ="Andre profile" className="profile-pic"></img>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        I am a graduate of the UCLA Extension Full-Stack Web Development Bootcamp.  
+        I am seeking for opportunities to apply my skillset and grow further as a developer.
+        Below are some examples of my work along with the technologies that I am familiar with. 
       </p>
+      </div>
     </div>
   );
 }

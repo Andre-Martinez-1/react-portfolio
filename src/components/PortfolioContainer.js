@@ -17,9 +17,9 @@ export default function PortfolioContainer() {
 
       {<About />}
 
-      {<Horizontal />} 
-
       {<Portfolio />} 
+
+      {<Horizontal />} 
 
       {<Contact />}
 

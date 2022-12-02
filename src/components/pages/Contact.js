@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { checkPassword, validateEmail } from '../utils/helpers';
+import { Parallax } from 'react-parallax';
+import TheVoidz from "../../assets/background-imgs/IMG_6338.jpg"
 
 function Contact() {
   // Create state variables for the fields in the form
@@ -52,6 +54,7 @@ function Contact() {
 
 
   return (
+    <Parallax className="contact-background" bgImage={TheVoidz} bgImageAlt="Image of band known as The Voidz" strength={800}>
     <div>
       <p>Hello {userName}</p>
       <form className="form">
@@ -84,6 +87,7 @@ function Contact() {
         </div>
       )}
     </div>
+    </Parallax>
   );
 }
 
