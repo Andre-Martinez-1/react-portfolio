@@ -55,7 +55,7 @@ function Contact() {
 
   return (
     <Parallax className="contact-background" bgImage={TheVoidz} bgImageAlt="Image of band known as The Voidz" strength={800}>
-    <div>
+    <div className="contact-content" id="contact">
       <p>Hello {userName}</p>
       <form className="form">
         <input

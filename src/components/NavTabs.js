@@ -25,10 +25,10 @@ function NavTabs() {
           <i class="fa-solid fa-user-tie fa-2x nav-i"></i>
         </Nav.Link>
 
-        <Nav.Link href="#resume" className="nav-resume">
-          Resume
-          <i class="fa-solid fa-list fa-2x nav-i"></i>
-        </Nav.Link>
+        {/* <Nav.Link href="#resume" className="nav-resume"> */}
+          {/* Resume */}
+          {/* <i class="fa-solid fa-list fa-2x nav-i"></i> */}
+        {/* </Nav.Link> */}
 
         <Nav.Link href="#portfolio" className="nav-port">
           Projects

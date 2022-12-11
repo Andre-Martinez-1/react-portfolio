@@ -7,6 +7,7 @@ export default function Portfolio(){
 <Parallax className="projects-background" bgImage={Swingers} bgImageAlt="Image of Andre Martinez walking in front of Swingers Diner" strength={800}>
 
     <div>
+    <div className="portfolio-details" id="portfolio">
     <h1>Projects</h1>
     <p>
     Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
@@ -16,6 +17,7 @@ export default function Portfolio(){
     imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
     in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
   </p>
+  </div>
   </div>
 </Parallax>
   );
