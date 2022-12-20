@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { checkPassword, validateEmail } from '../utils/helpers';
 import { Parallax } from 'react-parallax';
 import TheVoidz from "../../assets/background-imgs/IMG_6338.jpg"
+import "../css/contact.css";
 
 function Contact() {
   // Create state variables for the fields in the form

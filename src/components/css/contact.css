@@ -2,4 +2,9 @@
     position: relative;
     height: 100vh;
   }
-
+.contact-content{
+  justify-content:right;
+  color: white;
+  display: flex;
+  align-items: center;
+}

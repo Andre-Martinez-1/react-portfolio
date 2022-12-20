@@ -2,3 +2,10 @@
     position: relative;
     height: 100vh;
   }
+
+.portfolio-details{
+  justify-content:right;
+  color: white;
+  display: flex;
+  align-items: center;
+}

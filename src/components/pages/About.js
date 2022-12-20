@@ -7,7 +7,7 @@ export default function About() {
     <div>
       <div className="about-me" id="about">
       <div className="about-text">
-      <h1 className='mb-3'>About</h1>
+      <h1 className='title-mb-3'>About</h1>
          <img src = {ProfilePicture} alt ="Andre profile" className="profile-pic"></img>
       <p>
         I am a graduate of the UCLA Extension Full-Stack Web Development Bootcamp.  

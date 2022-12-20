@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import Swingers from "../../assets/background-imgs/IMG_4939.jpg"
+import "../css/portfolio.css";
 
 export default function Portfolio(){
   return(
