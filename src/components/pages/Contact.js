@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { checkPassword, validateEmail } from '../utils/helpers';
 import { Parallax } from 'react-parallax';
-import TheVoidz from "../../assets/background-imgs/IMG_6338.jpg"
+import TheVoidz from "../../assets/background-imgs/IMG_5545-2.jpg"
 import "../css/contact.css";
 
 function Contact() {
