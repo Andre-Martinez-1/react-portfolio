@@ -10,5 +10,10 @@
 
 .horizontal-container{
     width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color:#1c2630;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
+

@@ -8,6 +8,7 @@
 
 .about-me{
   display: flex;
+  padding: 15px;
   /* align-items:center; */
   justify-content:right;
   /* position: absolute;

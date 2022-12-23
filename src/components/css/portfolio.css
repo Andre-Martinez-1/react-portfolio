@@ -1,11 +1,27 @@
 .projects-background{
     position: relative;
     height: 100vh;
+   
   }
 
 .portfolio-details{
-  justify-content:right;
+  padding-top:20px;
+  justify-content:left;
   color: white;
   display: flex;
   align-items: center;
+  text-decoration: underline;
+  
+}
+
+.react-parallax-content{
+  background-color:rgba(151, 199, 209, 1);
+  
+}
+
+.row-cols-1{
+  padding-top: 50px;
+  padding-bottom: 200px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
