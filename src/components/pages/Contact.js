@@ -1,96 +1,127 @@
 import React, { useState } from 'react';
-import { checkPassword, validateEmail } from '../utils/helpers';
 import { Parallax } from 'react-parallax';
-import TheVoidz from "../../assets/background-imgs/IMG_5545-2.jpg"
+import LosAngeles2 from "../../assets/background-imgs/IMG_5545-2.jpg"
 import "../css/contact.css";
 
-function Contact() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setstatus] = useState("");
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    } else if (inputType === 'userName') {
-      setUserName(inputValue);
+  const handleInputChange = (event) => {
+    if (event.target.name === "name") {
+      setName(event.target.value);
+    } else if (event.target.name === "email") {
+      setEmail(event.target.value);
     } else {
-      setPassword(inputValue);
+      setMessage(event.target.value);
     }
   };
 
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    // checking to see if all input fields are full
+    if (email && name && message) {
+      // checking to make sure email is valid
+      if (checkEmail(email)) {
+        const encodedSubject = "Email From Portfolio";
+        const encodedBody = `${message} - from ${name} ${email}`;
+
+        // hyper link to open mail client and populate subject and body --- still working on this
+        const link = `mailto:andre_martinez15@yahoo.com?subject=${encodedSubject}&body=${encodedBody}`;
+
+        window.location = link;
+      } else {
+        setstatus("email is invalid");
+      }
+    } else {
+      setstatus("all input fields need to be filled ");
     }
-    if (!checkPassword(password)) {
-      setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
+  };
+
+  const checkEmail = (email) => {
+    return email
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
-      return;
-    }
-    alert(`Hello ${userName}`);
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setUserName('');
-    setPassword('');
-    setEmail('');
   };
 
 
   return (
-    <Parallax className="contact-background" bgImage={TheVoidz} bgImageAlt="Image of band known as The Voidz" strength={800}>
+    <Parallax className="contact-background" bgImage={LosAngeles2} bgImageAlt="Another Image of Los Angeles" strength={800}>
     <div className="contact-content" id="contact">
-      <p>Hello {userName}</p>
-      <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="username"
-        />
-        <input
-          value={password}
-          name="password"
-          onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
-        />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
+        <div className="contact-text">
+          <h1 className="text-center">Contact Me</h1>
+
+          <form className="px-5 py-1 text-center">
+            <div className="form-group ">
+              <label for="name" className="py-1 ">
+                Name
+              </label>
+              <input
+                value={name}
+                name="name"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="name"
+                class="form-control"
+              />
+            </div>
+
+            <div className="form-group">
+              <label for="email" className="py-1 ">
+                Email address
+              </label>
+              <input
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email"
+                placeholder="email"
+                class="form-control"
+              />
+            </div>
+
+            <div className="form-group">
+              <label for="message" className="py-1 ">
+                Message
+              </label>
+              <textarea
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="message"
+                class="form-control"
+                rows="3"
+              />
+            </div>
+
+            <button
+              type="submit"
+              onClick={handleFormSubmit}
+              class="btn btn-primary w-75 mt-3"
+            >
+              Submit
+            </button>
+          </form>
+
+          <p>{status}</p>
+
+          <p className="text-center"><i class="fa-solid fa-envelope"></i> Email: andre_martinez15@yahoo.com</p>
+          <p className="text-center"> <i class="fa-solid fa-location-dot"></i> Los Angeles, CA</p>
+          <p className="text-center"> Want to know more?</p>
+          <p>Link to my RESUME on the icon below!</p>
+          <p className="text-center"><a href="https://drive.google.com/uc?export=download&id=1btb7321UwB3Kzgn_6Q_xtEf3OUJUX29dAe2NqAWNtpU" className="text-center"><i class="fa-solid fa-file"></i>RESUME</a></p>
+
+
         </div>
-      )}
-    </div>
+      </div>
     </Parallax>
   );
 }
 
-export default Contact;
 

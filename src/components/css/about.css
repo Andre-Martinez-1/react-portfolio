@@ -10,7 +10,7 @@
   display: flex;
   padding: 15px;
   /* align-items:center; */
-  justify-content:right;
+  justify-content:center;
   /* position: absolute;
   height: 100vh;
   width: 100%; */
@@ -18,7 +18,7 @@
 }
 
 .about-text{
-  justify-content:right;
+  justify-content:center;
   color: white;
   display: flex;
   align-items: center;
@@ -26,4 +26,11 @@
 
 .title-mb-3{
   text-decoration: underline;
+}
+
+.fa-file{ 
+  font-size: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }

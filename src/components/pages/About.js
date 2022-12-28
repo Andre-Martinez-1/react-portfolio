@@ -12,8 +12,10 @@ export default function About() {
       <p>
         I am a graduate of the UCLA Extension Full-Stack Web Development Bootcamp.  
         I am seeking for opportunities to apply my skillset and grow further as a developer.
-        Below are some examples of my work along with the technologies that I am familiar with. 
-      </p>
+        Below are some examples of my work along with the technologies that I am familiar with.
+        </p>
+        <n></n>
+        <p className="text-center"><a href="https://drive.google.com/uc?export=download&id=1btb7321UwB3Kzgn_6Q_xtEf3OUJUX29dAe2NqAWNtpU" className="text-center"><i class="fa-solid fa-file"></i>RESUME</a></p>
       </div>
       </div>
     </div>
