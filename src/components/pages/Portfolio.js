@@ -23,8 +23,8 @@ export default function Portfolio(){
       <div class="card-body">
         <h5 class="card-title">The Artist Locator</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="https://jonathan-lee8.github.io/the-rockstars/" class="card-link"><i class="fa-solid fa-link"></i></a>
-        <a href="https://github.com/jonathan-lee8/the-rockstars" class="card-link"><i class="fa-brands fa-github"></i></a>
+        <a href="https://jonathan-lee8.github.io/the-rockstars/" class="card-link"><i class="fa-solid fa-xl fa-link"></i></a>
+        <a href="https://github.com/jonathan-lee8/the-rockstars" class="card-link"><i class="fa-brands fa-xl fa-github"></i></a>
         
       </div>
     </div>
@@ -35,8 +35,8 @@ export default function Portfolio(){
       <div class="card-body">
         <h5 class="card-title">Fullchat</h5>
         <p class="card-text">This is a short card.</p>
-        {/* <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a> */}
+        <a href="https://stormy-basin-09335.herokuapp.com/login" class="card-link"><i class="fa-solid fa-xl fa-link"></i></a>
+        <a href="https://github.com/Sam-T-G/FullChat" class="card-link"><i class="fa-brands fa-xl fa-github"></i></a>
       </div>
     </div>
   </div>
@@ -46,8 +46,8 @@ export default function Portfolio(){
       <div class="card-body">
         <h5 class="card-title">I Choose You</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        {/* <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a> */}
+        <a href="https://ichooseyou.herokuapp.com/" class="card-link"><i class="fa-solid fa-xl fa-link"></i></a>
+        <a href="https://github.com/a-riveragonzalez/i-choose-you" class="card-link"><i class="fa-brands fa-xl fa-github"></i></a>
       </div>
     </div>
   </div>
