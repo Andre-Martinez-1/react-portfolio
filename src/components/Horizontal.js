@@ -10,7 +10,7 @@ import MongoImg from "../assets/imgs/mongo.png";
 import MysqlImg from "../assets/imgs/my-sql.png";
 import NodeImg from "../assets/imgs/node.png";
 import ReactImg from "../assets/imgs/react.png";
-import HandlebarsImg from "../assets/imgs/handlebars.png";
+import gitImg from "../assets/imgs/git-logo3.png";
 import BootstrapImg from "../assets/imgs/bootstrap.png";
 
 export default function Horizontal() {
@@ -29,7 +29,7 @@ export default function Horizontal() {
         <img className="col-2 col-md-1 icon" alt="mongo icon" src={MongoImg}></img>
         <img className="col-2 col-md-1 icon" alt="mysql icon" src={MysqlImg}></img>
         <img className="col-2 col-md-1 icon" alt="github icon" src={GithubImg}></img>
-        <img className="col-2 col-md-1 icon" alt="handlebars icon" src={HandlebarsImg}></img>
+        <img className="col-2 col-md-1 icon" alt="git icon" src={gitImg}></img>
       </div>
     );
   }
