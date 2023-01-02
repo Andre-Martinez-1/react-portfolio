@@ -19,8 +19,12 @@ export default function About() {
         If you would like to learn more of my professional work and education 
         experience you can click on the link below!
         
-        </p>
-        <p className="text-center"><a href="https://drive.google.com/uc?export=download&id=1btb7321UwB3Kzgn_6Q_xtEf3OUJUX29dAe2NqAWNtpU" className="text-center"><i class="fa-solid fa-file"></i>RESUME</a></p>
+      </p>
+      <p className="text-center">
+        <a href="https://drive.google.com/uc?export=download&id=1btb7321UwB3Kzgn_6Q_xtEf3OUJUX29dAe2NqAWNtpU" className="text-center">
+          <i class="fa-solid fa-file"></i>RESUME
+        </a>
+      </p>
         </div>
       </div>
       </div>
