@@ -15,7 +15,8 @@
 }
 
 .react-parallax-content{
-  background-color:rgba(151, 199, 209, 1);
+  background: rgb(14,24,33);
+  background: linear-gradient(90deg, rgba(14,24,33,1) 0%, rgba(44,90,130,1) 50%, rgba(19,177,210,1) 88%);
   
 }
 
@@ -26,3 +27,24 @@
   padding-right: 25px;
 }
 
+.card{
+  background-color: #1c2630!important;
+}
+
+.card-body{
+  color: white !important;
+}
+
+.fa-link:hover{
+    color: white;
+    border-color: white;
+    background: #1c2630;
+    animation: animate 8s linear infinite;
+}
+
+.fa-github:hover{
+  color: white;
+  border-color: white;
+  background: #1c2630;
+  animation: animate 8s linear infinite;
+}
