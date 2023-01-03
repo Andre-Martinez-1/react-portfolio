@@ -30,7 +30,7 @@ export default function About() {
               </p>
               <p className="text-center">
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1btb7321UwB3Kzgn_6Q_xtEf3OUJUX29dAe2NqAWNtpU"
+                  href="https://drive.google.com/uc?export=download&id=100PNuBNtVY0up5IQuhx5vpFM4t8APT7i"
                   className="text-center"
                 >
                   <i class="fa-solid fa-file"></i>RESUME
