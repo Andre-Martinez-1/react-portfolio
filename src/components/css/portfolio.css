@@ -23,7 +23,7 @@
 .row-cols-1{
   padding-top: 50px;
   padding-bottom: 100px;
-  padding-left: 25px;
+  padding-left: 50px;
   padding-right: 25px;
 }
 
@@ -47,4 +47,8 @@
   border-color: white;
   background: #1c2630;
   animation: animate 8s linear infinite;
+}
+
+.row{
+  width: 100%!important;
 }
