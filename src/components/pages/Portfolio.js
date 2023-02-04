@@ -2,7 +2,7 @@ import React from "react";
 // import { Parallax } from "react-parallax";
 // import Swingers from "../../assets/background-imgs/IMG_4939.jpg";
 import "../css/portfolio.css";
-import artist from "../../assets/project-imgs/artist-locator.png";
+import artist from "../../assets/project-imgs/artist-locator2.png";
 import fullchat from "../../assets/project-imgs/fullchat2.png";
 import pokemon from "../../assets/project-imgs/i-choose-you.png";
 
@@ -138,7 +138,7 @@ export default function Portfolio() {
             <div className="text-center">
               {" "}
               <a
-                href="https://jonathan-lee8.github.io/the-rockstars/"
+                href="https://github.com/Spider-Man616/artist-locator"
                 class="card-link"
               >
                 <i class="fa-solid fa-xl fa-link"></i>
